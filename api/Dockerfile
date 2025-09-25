@@ -1,8 +1,8 @@
 FROM python:3.12.3-slim AS builder
 
-
 WORKDIR /app
-COPY ./requirements.txt .
+
+COPY requirements.txt .
 
 RUN python -m venv /opt/venv && \
     /opt/venv/bin/pip install --no-cache-dir --upgrade pip && \

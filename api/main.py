@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-from app.routes.poetry_routes import router as poetry_router
+from app.infra.routes.poetry_routes import router as poetry_router
 
 
 app = FastAPI(
@@ -10,6 +10,6 @@ app = FastAPI(
 
 app.include_router(poetry_router, prefix="/api/v1", tags=["Poesia"])
 
-@app.get("/")
+@app.get("/ping")
 async def root():
-    return {"message":"Ola mundo"}
+    return {"message":"pong"}
