@@ -65,18 +65,6 @@ Siga estas instruções para obter uma cópia do projeto rodando em sua máquina
     pip install -r requirements.txt
     ```
 
-4.  **Configure suas variáveis de ambiente:**
-
-      * Renomeie o arquivo `.env.example` para `.env`.
-      * Abra o arquivo `.env` e insira sua chave de API:
-
-    <!-- end list -->
-
-    ```env
-    # .env
-    OPENAI_API_KEY="sk-..."
-    ```
-
 ### Executando a Aplicação (Backend)
 
 Com o ambiente virtual ativado e as dependências instaladas, inicie o servidor FastAPI:
