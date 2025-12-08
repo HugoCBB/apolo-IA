@@ -12,7 +12,7 @@ from app.domain.poetry import PoetryOutput
 
 import os
 
-load_dotenv(dotenv_path=".env-production")
+load_dotenv()
 
 
 class PoetryLlm:
